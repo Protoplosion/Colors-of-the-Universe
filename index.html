@@ -17,10 +17,10 @@
         let colorsOn = true;
         while(colorsOn) {
             hue = Math.floor(Math.random() * 360);
-            document.getElementById("text").innerHTML = hue;
+            document.getElementById("text").innerHTML = hue.toString();
             document.body.style.backgroundColor = "hsl(0, 100%, 50%)";
             if(!colorsOn) {
-                break;
+                return;
             }
         }
     </script>
