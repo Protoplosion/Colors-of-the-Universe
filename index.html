@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-<title></title>
-</head>
+    <head>
+        <title></title>
+    </head>
 
-<body>
-<h1>Colours</h1>
-</body>
+    <body>
+        <h1 id="text">Colours</h1>
+    </body>
 
-<style>
-</style>
+    <style>
+    </style>
 
-<script>
-var hue = 0;
-var colorsOn = true;
-while(true) {
-hue = Math.floor(Math.random() * 360);
-document.body.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
-if(!colorOn) {
-return;
-}
-}
-</script>
+    <script>
+        var hue = 0;
+        var colorsOn = true;
+        while(true) {
+            hue = Math.floor(Math.random() * 360);
+            document.getElementById("text").HTML = hue;
+            document.body.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
+            if(!colorOn) {
+                return;
+            }
+        }
+    </script>
 
 </html>
