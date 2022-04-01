@@ -6,18 +6,18 @@
     </head>
     
     <body>
-        <p id="text" style="font-size: 100px; font-family: 'Arial'; font-weight: bold; color: #ffffff; text-shadow:  5px 10px #000000aa; text-align: center;">Can you see the colors?</p>
-        <audio id="myAudio">
-            <source src="music.mp3" type="audio/mpeg">
-        </audio>
+        <center>
+            <p style="font-size: 100px; font-family: 'Arial'; font-weight: bold; color: #ffffff; text-shadow:  5px 10px #000000aa;">Can you see the colors?</p>
+            <p id="hue" style="font-size: 10px; font-family: 'monospace'; color: #ffffff;"></p>
+        </center>
     </body>
     
     <script>
         let hue = 0;
-        document.getElementById("myAudio").play();
         setInterval(function() {
             hue = Math.floor(Math.random() * 360);
             document.body.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
+            document.getElementById("hue").innerHTML = hue;
         }, 100);
     </script>
     
