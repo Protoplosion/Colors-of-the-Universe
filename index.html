@@ -1,32 +1,22 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+    
     <head>
-        <title></title>
+        <title>Can you see the colors?</title>
     </head>
-
+    
     <body>
         <center>
-            <h1 id="text">Can you see the colors?</h1>
+            <h1 id="text" style="font-size: 100px; font-family: "Arial"; color: #ffffff;">Can you see the colors?</h1>
         </center>
     </body>
-
-    <style>
-        h1 {
-            font-size: 100px;
-            font-family: "Arial";
-            color: #ffffff;
-        }
-    </style>
-
+    
     <script>
         let hue = 0;
-        let colorsOn = true;
-        
         setInterval(function() {
             hue = Math.floor(Math.random() * 360);
             document.body.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
         }, 100);
     </script>
-
+    
 </html>
