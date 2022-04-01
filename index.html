@@ -15,7 +15,10 @@
     <script>
         let hue = 0;
         let colorsOn = true;
-        for (var i = 0; i < Infinity; i++) {
+        
+        var intervalID = window.setInterval(myCallback, 500);
+        
+        function myCallback() {
             hue = Math.floor(Math.random() * 360);
             document.getElementById("text").innerHTML = hue.toString();
             document.body.style.backgroundColor = "hsl(" + hue.toString() + ", 100%, 50%)";
