@@ -2,16 +2,24 @@
 <html lang="en">
     
     <head>
-        <title>Can you see the colors?</title>
+        <title>Colors of the Universe</title>
     </head>
     
     <body>
-        <center>
-            <p style="font-size: 100px; font-family: 'Arial'; font-weight: bold; color: #ffffff; text-shadow:  6px 6px #000000aa;">Can you see the colors?</p>
-        </center>
+        <div style="height: 100%; width: 100%; position: fixed; top: 0; left: 0;" onclick="play()">
+            <center>
+                <p style="font-size: 100px; font-family: 'Arial'; font-weight: bold; color: #ffffff; text-shadow:  6px 6px #000000aa;">Can you see the colors?</p>
+            </center>
+        </div>
+        <audio id="music" autoplay loop><source src="music.mp3" type="audio/mpeg"></audio>
     </body>
     
     <script>
+        function play() {
+        var music = document.getElementById("music");
+        music.play();
+        }
+
         let hue = 0;
         setInterval(function() {
             hue = Math.floor(Math.random() * 360);
