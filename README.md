@@ -1,2 +1,2 @@
 # colors
-website: https://colorsoftheuniverse.netlify.app/
+website: https://protoplosion.github.io/Colors-of-the-Universe/
